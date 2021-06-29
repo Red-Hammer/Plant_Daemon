@@ -1,5 +1,5 @@
 from app import create_app, db
-# from app.models import
+from app.models import Plant
 
 app = create_app()
 

@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>Hello World!</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block app_content %}
+    <p>I need to learn how to use html and javascript</p>
+    <p>Plant Information</p>
+    <div class="row">
+        <div class="col-md-4">
+            <p>{{ name }} was last watered on {{ last_watered }}.</p>
+        </div>
+        <div class="col-md-4">
+            <p>{{ name }} is a {{ plant_name }} type plant.</p>
+        </div>
+    </div>
+        <div class="row">
+
+    </div>
+
+{% endblock %}
